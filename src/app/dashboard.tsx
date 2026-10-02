@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
-import { useFocusEffect } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
 import { useCallback, useState } from "react";
 import {
     ActivityIndicator,
@@ -416,7 +416,10 @@ export default function DashboardScreen() {
         <TouchableOpacity style={[styles.tabButton, styles.tabButtonActive]}>
           <Ionicons name="home" size={22} color="#7C3AED" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.tabButton}>
+        <TouchableOpacity
+          style={styles.tabButton}
+          onPress={() => router.replace("/transacoes")}
+        >
           <Ionicons name="cart-outline" size={22} color="#1F1B3A" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.tabButton}>

@@ -7,6 +7,9 @@ export default function RootLayout() {
       <Stack.Screen name="login" />
       <Stack.Screen name="cadastro" />
       <Stack.Screen name="dashboard" />
+      <Stack.Screen name="transacoes" />
+      <Stack.Screen name="adicionar-transacao" />
+      <Stack.Screen name="detalhes-transacao" />
     </Stack>
   );
 }
